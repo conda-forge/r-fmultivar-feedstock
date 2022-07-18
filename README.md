@@ -3,7 +3,7 @@ About r-fmultivar
 
 Home: https://www.rmetrics.org
 
-Package license: GPL-2
+Package license: GPL-2.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-fmultivar-feedstock/blob/main/LICENSE.txt)
 
