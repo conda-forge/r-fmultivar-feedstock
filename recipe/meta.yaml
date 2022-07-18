@@ -24,24 +24,18 @@ requirements:
   build:
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
-
   host:
     - r-base
     - r-cubature
     - r-fbasics
     - r-mvtnorm
     - r-sn
-    - r-timedate
-    - r-timeseries
-
   run:
     - r-base
     - r-cubature
     - r-fbasics
     - r-mvtnorm
     - r-sn
-    - r-timedate
-    - r-timeseries
 
 test:
   commands:
@@ -50,10 +44,8 @@ test:
 
 about:
   home: https://www.rmetrics.org
-
-  license: GPL-2
+  license: GPL-2.0-or-later
   summary: Provides a  collection of functions to manage, to investigate and to analyze bivariate and multivariate data sets of financial returns.
-
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
