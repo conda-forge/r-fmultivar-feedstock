@@ -1,4 +1,4 @@
-{% set version = "3042.80.2" %}
+{% set version = "4021.83" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,13 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fMultivar_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fMultivar/fMultivar_{{ version }}.tar.gz
-  sha256: 6cb32696c2add8c1c54e37f92c92140e0aa51638e1385762b4e8a9bb92c1ca55
+  sha256: cd30259c1386ba21c4030c77a6fcbc740fe4c788f0053d8bed5e44e9e1174b26
 
 build:
   merge_build_host: true  # [win]
   number: 0
   noarch: generic
-
   rpaths:
     - lib/R/lib/
     - lib/
@@ -25,24 +24,18 @@ requirements:
   build:
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
-
   host:
     - r-base
     - r-cubature
     - r-fbasics
     - r-mvtnorm
     - r-sn
-    - r-timedate
-    - r-timeseries
-
   run:
     - r-base
     - r-cubature
     - r-fbasics
     - r-mvtnorm
     - r-sn
-    - r-timedate
-    - r-timeseries
 
 test:
   commands:
@@ -51,10 +44,8 @@ test:
 
 about:
   home: https://www.rmetrics.org
-
-  license: GPL-2
+  license: GPL-2.0-or-later
   summary: Provides a  collection of functions to manage, to investigate and to analyze bivariate and multivariate data sets of financial returns.
-
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
