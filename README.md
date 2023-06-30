@@ -1,11 +1,11 @@
-About r-fmultivar
-=================
+About r-fmultivar-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-fmultivar-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.rmetrics.org
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-fmultivar-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides a  collection of functions to manage, to investigate and to analyze bivariate and multivariate data sets of financial returns.
 
